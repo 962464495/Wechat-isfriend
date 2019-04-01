@@ -56,6 +56,7 @@ func (this *Webwx) SendMessage(user *Member, my string) {
 	name, resp := "webwxsendmsg", new(MessageResponse)
 	apiUri := fmt.Sprintf("%s/%s?pass_ticket=%s", this.BaseUri, name, this.Request.PassTicket)
 	if err = this.send(apiUri, name, bytes.NewReader(data), resp); err != nil {
+		log.Printf("检测用户[%d]时出错,错误信息:%s", user.NickName, err)
 		return
 	}
 	this.RevokeMessage(resp.MsgID, Myself, resp.LocalID, user)

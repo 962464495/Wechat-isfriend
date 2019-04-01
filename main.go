@@ -33,7 +33,6 @@ func main() {
 	default:
 		log.Println("检测到其他输入！程序终止！")
 	}
-
 }
 func next() {
 	wx, err := NewWebwx()
