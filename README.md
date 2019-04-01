@@ -9,9 +9,11 @@
 2. clone 代码下来后在目录里执行 `go build -o xiyang *.go`
 3. 运行 `./xiyang` 按照提示走即可
 
-##WINDOWS
+#WINDOWS
 
 1. `go get github.com/skratchdot/open-golang/open`
 2. clone 代码下来后在目录里执行 `go build ./`
 3. 运行 `Wechat-isfriend.exe` 按照提示走即可
-4. 遵循开源规则[![LICENSE](https://img.shields.io/badge/license-NPL%20(The%20996%20Prohibited%20License)-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+
+#开源规则
+遵循开源规则[![LICENSE](https://img.shields.io/badge/license-NPL%20(The%20996%20Prohibited%20License)-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
