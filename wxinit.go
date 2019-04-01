@@ -287,12 +287,14 @@ func (this *Webwx) send(apiUri, name string, body io.Reader, call Caller) (err e
 	}
 	req, err := http.NewRequest(method, apiUri, body)
 	if err != nil {
+		log.Println("http request err", err)
 		return
 	}
 
 	req.Header.Set("Content-Type", "application/json; charset=UTF-8")
 	resp, err := this.Client.Do(req)
 	if err != nil {
+		log.Println("do err", err)
 		return
 	}
 	defer resp.Body.Close()

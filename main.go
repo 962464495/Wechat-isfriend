@@ -7,8 +7,8 @@ import (
 )
 
 const (
-	Debug    = false              //是否开启debug模式
-	Duration = 2                  //请求腾讯接口的时间间隔
+	Debug    = false               //是否开启debug模式
+	Duration = 5                  //请求腾讯接口的时间间隔
 	Progress = 100                //进度条的长度
 	DeviceId = "e356475304216396" //模拟设备ID 可以随意修改 但请保持长度不变
 )
